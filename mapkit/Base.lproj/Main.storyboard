@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mapkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tk-vs-dI9">
+                                <rect key="frame" x="9" y="41" width="397" height="523"/>
+                                <color key="backgroundColor" red="0.12680919830000001" green="0.21873692210000001" blue="0.57677606140000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="523" id="lOC-ng-5sM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVa-6v-IVj">
+                                <rect key="frame" x="20" y="54" width="374" height="498"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="498" id="dSb-wd-iFY"/>
+                                </constraints>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Местоположение нашего колледжа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7i-14-ZfS">
+                                <rect key="frame" x="17" y="586" width="380" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="8Th-vZ-B5h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.12680919825704864" green="0.21873692208221965" blue="0.57677606139520199" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nJT0wtC5ojWxYNKlfopb9qqNjWyRPa9ue0hnDjbi72pbdVE2p1JcvXm7qxJ30hJ4hjw8_aRICVxEGqOl6n4xw0nU" translatesAutoresizingMaskIntoConstraints="NO" id="SBP-kT-0Z0">
+                                <rect key="frame" x="297" y="764" width="109" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="LfJ-39-O2e"/>
+                                    <constraint firstAttribute="height" constant="117" id="zNG-as-Gvr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi3-jz-ojC">
+                                <rect key="frame" x="256" y="641" width="141" height="52"/>
+                                <color key="backgroundColor" red="0.12680919830000001" green="0.21873692210000001" blue="0.57677606140000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="D9L-cD-mv9"/>
+                                    <constraint firstAttribute="height" constant="52" id="QkV-2Z-ujQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Спутник">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sput_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMI-mu-0KM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-Ej-FSm">
+                                <rect key="frame" x="20" y="641" width="141" height="52"/>
+                                <color key="backgroundColor" red="0.12680919830000001" green="0.21873692210000001" blue="0.57677606140000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="P5O-nH-55P"/>
+                                    <constraint firstAttribute="height" constant="52" id="c4M-nw-vr8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="2д карта">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="twod_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkO-sR-2F9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r7i-14-ZfS" secondAttribute="bottom" constant="250" id="24i-Sf-uCV"/>
+                            <constraint firstItem="r7i-14-ZfS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="5gT-7S-VI1"/>
+                            <constraint firstItem="VVa-6v-IVj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6YN-Gb-Juk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r7i-14-ZfS" secondAttribute="trailing" constant="17" id="GQM-BR-1FQ"/>
+                            <constraint firstItem="SBP-kT-0Z0" firstAttribute="top" secondItem="VVa-6v-IVj" secondAttribute="bottom" constant="212" id="H5d-jN-oce"/>
+                            <constraint firstItem="0Tk-vs-dI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="KXW-UA-jtp"/>
+                            <constraint firstItem="fi3-jz-ojC" firstAttribute="top" secondItem="r7i-14-ZfS" secondAttribute="bottom" constant="29" id="Pib-58-FbT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SBP-kT-0Z0" secondAttribute="trailing" constant="8" id="SDR-Q7-exo"/>
+                            <constraint firstItem="Ydt-Ej-FSm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tun-CK-XLm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fi3-jz-ojC" secondAttribute="trailing" constant="17" id="WRg-yp-m7Q"/>
+                            <constraint firstItem="VVa-6v-IVj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="Z16-HE-fKA"/>
+                            <constraint firstItem="SBP-kT-0Z0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="297" id="arn-xf-gof"/>
+                            <constraint firstItem="VVa-6v-IVj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="54" id="fzJ-HA-jvR"/>
+                            <constraint firstItem="0Tk-vs-dI9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="41" id="j7e-dV-ghW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Tk-vs-dI9" secondAttribute="trailing" constant="8" id="ogN-P4-c6N"/>
+                            <constraint firstItem="Ydt-Ej-FSm" firstAttribute="top" secondItem="r7i-14-ZfS" secondAttribute="bottom" constant="29" id="unU-Cz-9X1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="VVa-6v-IVj" id="EFC-KY-TfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.463768115942031" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nJT0wtC5ojWxYNKlfopb9qqNjWyRPa9ue0hnDjbi72pbdVE2p1JcvXm7qxJ30hJ4hjw8_aRICVxEGqOl6n4xw0nU" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
